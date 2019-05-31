@@ -1,0 +1,43 @@
+/*
+Name: Troy Garcia
+File: header-style.css
+Description: Styling used for the header will be found here
+*/
+header{
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2.5vh;
+  }
+  h1{
+    padding: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    background:#4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    float: left;
+    min-height: 5vh;
+  }
+  .header-container{
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+
+  }
+  .link-container {
+    float: right;
+    margin: 26px 0;
+  }
+  .main-links{
+      padding: 0 20px;
+      margin-left: -4px;
+      border-style: solid;
+      border-right-width: 1px;
+      border-color: #cccccc;
+      color: #777777;
+  }
+  .end-link{
+    padding-left: 20px;
+    margin-left: -4px;
+    color: #777777;
+}
