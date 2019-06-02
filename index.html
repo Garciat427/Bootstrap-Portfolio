@@ -1,43 +1,92 @@
 <!DOCTYPE html>     <!--Setting doc type-->
 <html lang="en-us"> <!--Language of current HTML-->
-    
     <!--Metadata for the site-->
     <head>
         <meta charset="UTF-8">          <!--Setting the caracter set-->
         <title>Troy Garcia - About Me</title>  <!--Setting the title for the site-->
 
         <!--Importing any CSS Files for this site-->
-        <link rel="stylesheet" type="text/css" href="assets/css/css-reset.css">
+        <!-- Previous CSS -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/css/css-reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/header-style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/footer-style.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/about-style.css">     <!--CSS styling for this site-->
+        <link rel="stylesheet" type="text/css" href="assets/css/about-style.css">   -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="assets/css/portfolio-style.css" rel="stylesheet">
+        <link href="assets/css/navbar-style.css" rel="stylesheet"> <!--CSS styling for this site-->
     </head>
-<div class="screen-container">
+
     <!--Header For the site-->
     <header> <!--Start of header section-->
-        <div class="header-container">
-            <h1>Troy Garcia</h1>                    <!--Header 1 - My name-->
-            <div class="link-container">
-                <a href="index.html" class= "main-links">About</a>          <!--Link 1 that points torwards the about site-->
-                <a href="portfolio.html" class= "main-links">Portfolio</a>  <!--Link 2 that points torwards the portfolio site-->
-                <a href="contact.html" class= "end-link">Contact</a>      <!--Link 3 that points torward the Contact site-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class= "container navbarSize">
+                <div class = "col-md-3">
+                    <a class="navbar-brand navbarFont" href="index.html">Troy Garcia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+                <div class = "col-md-3">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>       
+        </nav>     
     </header> <!--End of header section-->
     
     <!--The main body for the Site-->
     <body> <!--Start of body section-->
-        <div class="bio-container">
-            <section id="main-bio">
-                <h2>About Me</h2>
-                <hr size="5">
-                <img class="bio-image" src="assets/images/AboutMePic.png" alt="My profile Pic">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo suscipit sapien at luctus. Aenean tincidunt semper est, et commodo arcu pulvinar vel. Duis mattis massa odio, ut iaculis ante ultrices ac. Donec lobortis, nibh in dictum mattis, mi felis lacinia orci, nec fringilla ex ipsum ut libero. Curabitur accumsan urna a est luctus vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere magna non posuere accumsan. Aenean placerat placerat porta. Phasellus sed diam euismod, rhoncus metus porttitor, faucibus diam.</p>
-                <br>
-                <p class="text">Nulla fermentum, est eget commodo efficitur, purus ligula scelerisque enim, id facilisis enim nisi ac velit. Fusce suscipit finibus blandit. Suspendisse at auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie metus in dolor dapibus vehicula. Proin aliquam velit ut arcu pulvinar, vitae suscipit felis finibus. Sed eu gravida est. Donec a mi commodo, congue nisl nec, sagittis ipsum. Suspendisse potenti. Sed aliquam nisl eget leo volutpat, eu iaculis mauris euismod. Praesent libero turpis, varius sed nisl tincidunt, fringilla vehicula odio. Aliquam erat volutpat. Nulla ante ligula, elementum sit amet vestibulum non, bibendum ac lacus. Praesent varius sem et tortor sodales sagittis.</p>
-                <br>
-                <p class="text">Phasellus aliquet vitae nunc in finibus. Mauris sit amet magna ante. Vestibulum consectetur nulla ipsum, ut imperdiet ligula egestas in. Maecenas quis ligula eget lorem pellentesque mattis. Pellentesque gravida sit amet magna et auctor. Integer rutrum mauris in metus bibendum, vel placerat arcu mattis. Pellentesque vel commodo nunc. Morbi sapien arcu, porttitor eu purus molestie, ultrices ultrices massa. Donec et felis ipsum. Mauris imperdiet orci augue, ut ornare justo sollicitudin dictum. Duis mauris libero, varius eu aliquam ut, hendrerit quis velit. Mauris neque nulla, cursus vitae tellus a, tincidunt fermentum ex. Nullam bibendum dui sagittis, dignissim orci eu, dapibus arcu. Nunc rutrum viverra libero eget volutpat. Sed finibus enim vel tortor ullamcorper, ac placerat elit consectetur. In varius, ipsum id dictum consequat, nulla ex dapibus sapien, in pulvinar orci est vel nisi.</p>
-            </section>
+        <div class="container marginMainContent">
+            <div class="card">
+                <div class = "container">
+                    
+                    <div class = "row">
+                        <div class = "col-md-3">
+                                <h2 class = "headerStyle">About Me</h2>
+                        </div>    
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-lg-12">
+                                <hr size="5">
+                        </div>
+                    </div>
+                    
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <img class = "img-thumbnail" src="assets/images/AboutMePic.png" alt="My profile Pic">
+                        </div>
+                        <div class = "col-md-8">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo suscipit sapien at luctus. Aenean tincidunt semper est, et commodo arcu pulvinar vel. Duis mattis massa odio, ut iaculis ante ultrices ac. Donec lobortis, nibh in dictum mattis, mi felis lacinia orci, nec fringilla ex ipsum ut libero. Curabitur accumsan urna a est luctus vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere magna non posuere accumsan. Aenean placerat placerat porta. Phasellus sed diam euismod, rhoncus metus porttitor, faucibus diam.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                        
+                        
+                        
+                        <br>
+                        <p class="text">Nulla fermentum, est eget commodo efficitur, purus ligula scelerisque enim, id facilisis enim nisi ac velit. Fusce suscipit finibus blandit. Suspendisse at auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie metus in dolor dapibus vehicula. Proin aliquam velit ut arcu pulvinar, vitae suscipit felis finibus. Sed eu gravida est. Donec a mi commodo, congue nisl nec, sagittis ipsum. Suspendisse potenti. Sed aliquam nisl eget leo volutpat, eu iaculis mauris euismod. Praesent libero turpis, varius sed nisl tincidunt, fringilla vehicula odio. Aliquam erat volutpat. Nulla ante ligula, elementum sit amet vestibulum non, bibendum ac lacus. Praesent varius sem et tortor sodales sagittis.</p>
+                        <br>
+                        <p class="text">Phasellus aliquet vitae nunc in finibus. Mauris sit amet magna ante. Vestibulum consectetur nulla ipsum, ut imperdiet ligula egestas in. Maecenas quis ligula eget lorem pellentesque mattis. Pellentesque gravida sit amet magna et auctor. Integer rutrum mauris in metus bibendum, vel placerat arcu mattis. Pellentesque vel commodo nunc. Morbi sapien arcu, porttitor eu purus molestie, ultrices ultrices massa. Donec et felis ipsum. Mauris imperdiet orci augue, ut ornare justo sollicitudin dictum. Duis mauris libero, varius eu aliquam ut, hendrerit quis velit. Mauris neque nulla, cursus vitae tellus a, tincidunt fermentum ex. Nullam bibendum dui sagittis, dignissim orci eu, dapibus arcu. Nunc rutrum viverra libero eget volutpat. Sed finibus enim vel tortor ullamcorper, ac placerat elit consectetur. In varius, ipsum id dictum consequat, nulla ex dapibus sapien, in pulvinar orci est vel nisi.</p>
+                    </section>
+                </div>
+            </div> 
         </div>
     </body> <!--End of body section-->
 </div>
