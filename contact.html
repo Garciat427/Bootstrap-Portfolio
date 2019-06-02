@@ -9,7 +9,7 @@
         <!--Importing any CSS Files for this site-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
-        <link href="assets/css/portfolio-style.css" rel="stylesheet">
+        <link href="assets/css/contact-style.css" rel="stylesheet">
         <link href="assets/css/navbar-style.css" rel="stylesheet"> <!--CSS styling for this site-->    <!--CSS styling for this site-->
     </head>
     <header> <!--Start of header section-->
@@ -28,11 +28,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">About</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                         </li>
                         </ul>
                     </div>
@@ -43,7 +43,7 @@
 
     <body> <!--Start of body section-->
         <div class="container marginMainContent">
-            <div class="card">
+            <div class="card ">
                 <div class = "container">
                     <div class = "row">
                         <div class = "col-md-3">
@@ -60,7 +60,39 @@
                     <!-- Main Content -->
                     <!-- Row 1 -->
                     <div class = "row">
-                        
+                        <div class="col-lg-12">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Name</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="-Your name Here-" aria-label="Username" aria-describedby="basic-addon1">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class="col-lg-12">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Email</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="youremail@example.com" aria-label="Username" aria-describedby="basic-addon1">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class="col-lg-12 buttonMargin">
+                            <button type="button " class="btn btn-dark buttonMargin">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div> 
